@@ -1,0 +1,37 @@
+Value Required NAME (\S+)
+Value DESC (\S+)
+Value DEST (\S+)
+Value ADMIN (\S+)
+Value OPER (\S+)
+Value PATH (\S+)
+Value SIGNAL (\S+)
+Value INLABEL (\S+)
+Value INLABEL_ID (\S+)
+Value OUTLABEL (\S+)
+Value OUTLABEL_ID (\S+)
+Value SRC (\S+)
+Value DST (\S+)
+Value ID (\d+)
+Value INSTANCE (\d+)
+Value HOP (\d+)
+Value List IP_ROUTE (\d+\.\d+\.\d+\.\d+)
+
+
+Start
+  ^Name: -> Continue.Record
+  ^Name:\s+${NAME}\s+Destination:\s+${DEST}\s+Ifhandle:\S+\s*$$
+  ^\s+Signalled-Name:${DESC}\s*$$
+  ^\s+Status:
+  ^\s+Admin:\s+${ADMIN}\s+Oper:\s+${OPER}\s+Path:\s+${PATH}\s+Signalling:\s+${SIGNAL}\s*$$
+  ^\s+Node\s+hop\s+count:\s+${HOP}\s*$$
+  ^\s+Hop\d+:\s+${IP_ROUTE}\s*$$
+  ^LSP\s+Tunnel -> LSP 
+
+LSP
+  ^LSP\s+Tunnel -> Continue.Record
+  ^LSP\s+Tunnel\s+${NAME}\s+${ID}\s+\[${INSTANCE}\]\s+is\s+\S+,\s+Signaling\s+State:\s+\S+\s*$$
+  ^\s+Tunnel\s+Name:\s+${DESC}\s+Tunnel\s+Role:\s+\S+\s*$$
+  ^\s+InLabel:\s+${INLABEL}(,\s+${INLABEL_ID})?\s*$$
+  ^\s+OutLabel:\s+${OUTLABEL}(,\s+${OUTLABEL_ID})?\s*$$
+  ^\s+Signalling\s+Info:
+  ^\s+Src\s+${SRC}\s+Dst\s+${DST},\s+Tun\s+ID\s+${ID},\s+Tun\s+Inst\s+${INSTANCE},.+\s*$$

@@ -1,0 +1,281 @@
+
+Sat Apr  8 10:46:51.336 WIB
+
+
+Name: tunnel-te1  Destination: 10.10.10.223  Ifhandle:0x3c00805c 
+  Signalled-Name: RAW-JIBKL0141-04C_t1
+  Status:
+    Admin:    up Oper:   up   Path:  valid   Signalling: connected
+
+    path option 1,  type dynamic  (Basis for Setup, path weight 100)
+      Accumulative metrics: TE 100 IGP 100 Delay 300000 
+    Last Signalled Error : Fri Mar 17 23:36:03 2023
+      Info: [74] PathErr(24,4)-(Error: routing (24), Suberror: bad initial sub-obj (4)) at 10.10.10.149
+    G-PID: 0x0800 (derived from egress interface properties)
+    Bandwidth Requested: 0 kbps  CT0
+    Creation Time: Fri Jan 27 01:48:14 2023 (10w1d ago)
+  Config Parameters:
+    Bandwidth:        0 kbps (CT0) Priority:  0  0 Affinity: 0x0/0xffff
+    Metric Type: TE (global)
+    Path Selection:
+      Tiebreaker: Min-fill (default)
+    Hop-limit: disabled
+    Cost-limit: disabled
+    Delay-limit: disabled
+    Delay-measurement: disabled
+    Path-invalidation timeout: 10000 msec (default), Action: Tear (default)
+    AutoRoute:  enabled  LockDown: disabled   Policy class: not set
+    Forward class: 0 (not enabled)
+    Forwarding-Adjacency: disabled
+    Autoroute Destinations: 0
+    Loadshare:          0 equal loadshares
+    Auto-bw: disabled
+    Auto-Capacity: Disabled:
+    Fast Reroute: Enabled, Protection Desired: Any
+    Path Protection: Not Enabled
+    BFD Fast Detection: Disabled
+    Reoptimization after affinity failure: Enabled
+    Soft Preemption: Disabled
+  History:
+    Tunnel has been up for: 2w0d (since Fri Mar 24 23:41:32 WIB 2023)
+    Current LSP:
+      Uptime: 2w0d (since Fri Mar 24 23:48:50 WIB 2023)
+    Reopt. LSP:
+      Last Failure:
+        LSP not signalled, identical to the [CURRENT] LSP
+        Date/Time: Sat Apr 08 10:33:50 WIB 2023 [00:13:01 ago]
+    Prior LSP:
+      ID: 82 Path Option: 1
+      Removal Trigger: reoptimization completed
+
+  Path info (IS-IS XX level-1):
+  Node hop count: 1
+  Hop0: 10.10.10.74
+  Hop1: 10.10.10.223
+
+
+Name: tunnel-te2  Destination: 10.10.10.80  Ifhandle:0x3c008064 
+  Signalled-Name: LTE-RAW-JIBKL0141-04C-to-AG-SBSPG-01
+  Status:
+    Admin:    up Oper:   up   Path:  valid   Signalling: connected
+
+    path option 1,  type dynamic  (Basis for Setup, path weight 103)
+      Accumulative metrics: TE 103 IGP 103 Delay 600000 
+    Last Signalled Error : Sun Mar 12 23:40:39 2023
+      Info: [13] PathErr(12,0)-(preempted) at 10.10.10.73
+    G-PID: 0x0800 (derived from egress interface properties)
+    Bandwidth Requested: 0 kbps  CT0
+    Creation Time: Fri Jan 27 01:48:14 2023 (10w1d ago)
+  Config Parameters:
+    Bandwidth:        0 kbps (CT0) Priority:  0  0 Affinity: 0x0/0xffff
+    Metric Type: TE (global)
+    Path Selection:
+      Tiebreaker: Min-fill (default)
+    Hop-limit: disabled
+    Cost-limit: disabled
+    Delay-limit: disabled
+    Delay-measurement: disabled
+    Path-invalidation timeout: 10000 msec (default), Action: Tear (default)
+    AutoRoute:  enabled  LockDown: disabled   Policy class: not set
+    Forward class: 0 (not enabled)
+    Forwarding-Adjacency: disabled
+    Autoroute Destinations: 0
+    Loadshare:          0 equal loadshares
+    Auto-bw: disabled
+    Auto-Capacity: Disabled:
+    Fast Reroute: Enabled, Protection Desired: Any
+    Path Protection: Not Enabled
+    BFD Fast Detection: Disabled
+    Reoptimization after affinity failure: Enabled
+    Soft Preemption: Disabled
+  History:
+    Tunnel has been up for: 3w2d (since Thu Mar 16 02:09:47 WIB 2023)
+    Current LSP:
+      Uptime: 3w2d (since Thu Mar 16 03:48:50 WIB 2023)
+    Reopt. LSP:
+      Last Failure:
+        LSP not signalled, identical to the [CURRENT] LSP
+        Date/Time: Sat Apr 08 10:33:50 WIB 2023 [00:13:01 ago]
+    Prior LSP:
+      ID: 26 Path Option: 1
+      Removal Trigger: reoptimization completed
+
+  Path info (IS-IS XX level-1):
+  Node hop count: 2
+  Hop0: 10.10.10.73
+  Hop1: 10.10.10.21
+  Hop2: 10.10.10.80
+
+
+Name: tunnel-te101  Destination: 10.10.10.81  Ifhandle:0x3c008074 
+  Signalled-Name: LP-RAW-JIBKL0141-04C-to-AG-SBBKL-01
+  Status:
+    Admin:    up Oper:   up   Path:  valid   Signalling: connected
+
+    path option 1,  type explicit LPTE101-AG-SBBKL-01 (Basis for Setup, path weight 203)
+      Accumulative metrics: TE 203 IGP 203 Delay 900000 
+    Last Signalled Error : Fri Mar 17 23:01:19 2023
+      Info: [66] PathErr(24,5)-(Error: routing (24), Suberror: no route to dest (5)) at 10.10.10.124
+    G-PID: 0x0800 (derived from egress interface properties)
+    Bandwidth Requested: 0 kbps  CT0
+    Creation Time: Fri Jan 27 02:57:56 2023 (10w1d ago)
+  Config Parameters:
+    Bandwidth:        0 kbps (CT0) Priority:  0  0 Affinity: 0x0/0xffff
+    Metric Type: TE (global)
+    Path Selection:
+      Tiebreaker: Min-fill (default)
+    Hop-limit: disabled
+    Cost-limit: disabled
+    Delay-limit: disabled
+    Delay-measurement: disabled
+    Path-invalidation timeout: 10000 msec (default), Action: Tear (default)
+    AutoRoute: disabled  LockDown: disabled   Policy class: not set
+    Forward class: 0 (not enabled)
+    Forwarding-Adjacency: disabled
+    Autoroute Destinations: 0
+    Loadshare:          0 equal loadshares
+    Auto-bw: disabled
+    Auto-Capacity: Disabled:
+    Fast Reroute: Disabled, Protection Desired: None
+    Path Protection: Not Enabled
+    BFD Fast Detection: Disabled
+    Reoptimization after affinity failure: Enabled
+    Soft Preemption: Disabled
+  History:
+    Tunnel has been up for: 1w4d (since Mon Mar 27 23:10:32 WIB 2023)
+    Current LSP:
+      Uptime: 1w4d (since Mon Mar 27 23:10:32 WIB 2023)
+    Reopt. LSP:
+      Last Failure:
+        LSP not signalled, identical to the [CURRENT] LSP
+        Date/Time: Sat Apr 08 10:33:50 WIB 2023 [00:13:01 ago]
+    Prior LSP:
+      ID: 68 Path Option: 1
+      Removal Trigger: path verification failed
+
+  Path info (IS-IS XX level-1):
+  Node hop count: 3
+  Hop0: 10.10.10.74
+  Hop1: 10.10.10.71
+  Hop2: 10.10.10.22
+  Hop3: 10.10.10.81
+
+
+LSP Tunnel 10.10.10.223 101 [42] is signalled, Signaling State: up
+  Tunnel Name: LP-RAW-JISPG3227-01C-to-AG-SBSPG-01 Tunnel Role: Mid
+  InLabel: Bundle-Ether100, 24566
+  OutLabel: Bundle-Ether1, 31700
+  Signalling Info:
+    Src 10.10.10.223 Dst 10.10.10.80, Tun ID 101, Tun Inst 42, Ext ID 10.10.10.223
+    Router-IDs: upstream   10.10.10.223
+                local      10.10.10.124
+                downstream 10.10.10.81
+    Bandwidth: 0 kbps (CT0) Priority:  0  0 DSTE-class: 4
+    Soft Preemption: None
+    SRLGs: not collected
+    Path Info:
+      Incoming Address: 10.10.10.75
+      Incoming:
+      Explicit Route:
+        Strict, 10.10.10.75
+        Strict, 10.10.10.73
+        Strict, 10.10.10.21
+        Strict, 10.10.10.80
+
+      Outgoing:
+        Explicit Route:
+          Strict, 10.10.10.73
+          Strict, 10.10.10.21
+          Strict, 10.10.10.80
+
+      Record Route:
+        IPv4 10.10.10.74, flags 0x0
+      Tspec: avg rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+      Session Attributes: Local Prot: Not Set, Node Prot: Not Set, BW Prot: Not Set
+                          Soft Preemption Desired: Not Set
+    Resv Info:
+      Record Route:
+        IPv4 10.10.10.73, flags 0x0
+        Label 31700, flags 0x1
+        IPv4 10.10.10.21, flags 0x0
+        Label 3, flags 0x1
+      Fspec: avg rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel 10.10.10.80 40415 [2065] is signalled, Signaling State: up
+  Tunnel Name: MBH-AG-SBSPG-01-RAW-JIBKL0141-04E Tunnel Role: Tail
+  InLabel: Bundle-Ether1, implicit-null
+  Signalling Info:
+    Src 10.10.10.80 Dst 10.10.10.124, Tun ID 40415, Tun Inst 2065, Ext ID 10.10.10.80
+    Router-IDs: upstream   10.10.10.81
+                local      10.10.10.124
+    Bandwidth: 0 kbps (CT0) Priority:  7  0 DSTE-class: 0
+    Soft Preemption: None
+    SRLGs: not collected
+    Path Info:
+      Incoming Address: 10.10.10.73
+      Incoming:
+      Explicit Route:
+        No ERO
+
+      Record Route:
+        IPv4 10.10.10.73, flags 0x0
+        IPv4 10.10.10.21, flags 0x0
+      Tspec: avg rate=0 kbits, burst=0 bytes, peak rate=IEEE_INFINITY
+      Session Attributes: Local Prot: Not Set, Node Prot: Not Set, BW Prot: Not Set
+                          Soft Preemption Desired: Not Set
+    Resv Info: None
+      Record Route: Empty
+      Fspec: avg rate=0 kbits, burst=0 bytes, peak rate=IEEE_INFINITY
+
+LSP Tunnel 10.10.10.80 40416 [2064] is signalled, Signaling State: up
+  Tunnel Name: MBH-AG-SBSPG-01-RAW_JIBKL0141_04E Tunnel Role: Tail
+  InLabel: Bundle-Ether1, implicit-null
+  Signalling Info:
+    Src 10.10.10.80 Dst 10.10.10.124, Tun ID 40416, Tun Inst 2064, Ext ID 10.10.10.80
+    Router-IDs: upstream   10.10.10.81
+                local      10.10.10.124
+    Bandwidth: 0 kbps (CT0) Priority:  7  0 DSTE-class: 0
+    Soft Preemption: None
+    SRLGs: not collected
+    Path Info:
+      Incoming Address: 10.10.10.73
+      Incoming:
+      Explicit Route:
+        No ERO
+
+      Record Route:
+        IPv4 10.10.10.73, flags 0x0
+        IPv4 10.10.10.21, flags 0x0
+      Tspec: avg rate=0 kbits, burst=0 bytes, peak rate=IEEE_INFINITY
+      Session Attributes: Local Prot: Not Set, Node Prot: Not Set, BW Prot: Not Set
+                          Soft Preemption Desired: Not Set
+    Resv Info: None
+      Record Route: Empty
+      Fspec: avg rate=0 kbits, burst=0 bytes, peak rate=IEEE_INFINITY
+
+LSP Tunnel 10.10.10.81 52413 [2053] is signalled, Signaling State: up
+  Tunnel Name: MBH-AG-SBBKL-01-RAW-JIBKL0141-04E Tunnel Role: Tail
+  InLabel: Bundle-Ether1, implicit-null
+  Signalling Info:
+    Src 10.10.10.81 Dst 10.10.10.124, Tun ID 52413, Tun Inst 2053, Ext ID 10.10.10.81
+    Router-IDs: upstream   10.10.10.81
+                local      10.10.10.124
+    Bandwidth: 0 kbps (CT0) Priority:  7  0 DSTE-class: 0
+    Soft Preemption: None
+    SRLGs: not collected
+    Path Info:
+      Incoming Address: 10.10.10.73
+      Incoming:
+      Explicit Route:
+        No ERO
+
+      Record Route:
+        IPv4 10.10.10.73, flags 0x0
+      Tspec: avg rate=0 kbits, burst=0 bytes, peak rate=IEEE_INFINITY
+      Session Attributes: Local Prot: Not Set, Node Prot: Not Set, BW Prot: Not Set
+                          Soft Preemption Desired: Not Set
+    Resv Info: None
+      Record Route: Empty
+      Fspec: avg rate=0 kbits, burst=0 bytes, peak rate=IEEE_INFINITY
+Displayed 3 (of 3) heads, 1 (of 1) midpoints, 3 (of 3) tails
+Displayed 3 up, 0 down, 0 recovering, 0 recovered heads
