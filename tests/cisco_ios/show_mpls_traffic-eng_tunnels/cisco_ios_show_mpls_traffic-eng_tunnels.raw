@@ -1,0 +1,777 @@
+
+P2P TUNNELS/LSPs:
+
+Name: LTE-PRR-XX1638-01-to-RR-XXSPG-01    (Tunnel1) Destination: 10.10.10.80
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type dynamic (Basis for Setup, path weight 100)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: enabled  LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: dynamic path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: disabled
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/24, implicit-null
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.80, Tun_Id 1, Tun_Instance 95
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 10.10.10.14 10.10.10.15
+      Record   Route: 
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 10 minutes
+      Number of LSP IDs (Tun_Instances) used: 95
+    Current LSP: [ID: 95]
+      Uptime: 22 hours, 10 minutes
+
+Name: LTE-PRR-XX1638-01-to-RR-XXBKL-01    (Tunnel2) Destination: 10.10.10.81
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type dynamic (Basis for Setup, path weight 103)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: enabled  LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: dynamic path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: disabled
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/24, 30757
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.81, Tun_Id 2, Tun_Instance 95
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.22 10.10.10.81 
+      Record   Route: 
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30757) 10.10.10.81
+                       10.10.10.22(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 10 minutes
+      Number of LSP IDs (Tun_Instances) used: 95
+    Current LSP: [ID: 95]
+      Uptime: 22 hours, 10 minutes
+
+Name: LTE-PRR-XX1638-01-to-PRR-XXK880-... (Tunnel3) Destination: 10.10.10.30
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type dynamic (Basis for Setup, path weight 100)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: enabled  LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: dynamic path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: disabled
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/25, implicit-null
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.30, Tun_Id 3, Tun_Instance 95
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: NONE
+      Record   Route: 
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.30(3) 10.10.10.126(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 10 minutes
+      Number of LSP IDs (Tun_Instances) used: 95
+    Current LSP: [ID: 95]
+      Uptime: 22 hours, 10 minutes
+
+Name: PRR-XX1638-01-to-RR-XXSPG-01        (Tunnel101) Destination: 10.10.10.80
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type explicit LP-PRR-XX1638-01-to-RR-XXSPG-01 (Basis for Setup, path weight 203)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: disabled LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: explicit path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: disabled
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/25, 2029
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.80, Tun_Id 101, Tun_Instance 95
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 10.10.10.117 10.10.10.21 10.10.10.80 
+      Record   Route:   NONE
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 10 minutes
+      Number of LSP IDs (Tun_Instances) used: 95
+    Current LSP: [ID: 95]
+      Uptime: 22 hours, 10 minutes
+
+Name: PRR-XX1638-01-to-PRR-XXK880-02      (Tunnel102) Destination: 10.10.10.30
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type explicit LP-PRR-XX1638-01-to-PRR-XXK880-02 (Basis for Setup, path weight 100)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: disabled LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: explicit path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: disabled
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/25, implicit-null
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.30, Tun_Id 102, Tun_Instance 95
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 10.10.10.30 
+      Record   Route:   NONE
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 10 minutes
+      Number of LSP IDs (Tun_Instances) used: 95
+    Current LSP: [ID: 95]
+      Uptime: 22 hours, 10 minutes
+
+Name: LP-PRR-XX1638-01-to-RR-XXBKL-01-... (Tunnel103) Destination: 10.10.10.81
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type explicit (verbatim) LP103-to-RR-XXBKL-01 (Basis for Setup, path weight 0)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: disabled LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: explicit path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: enabled 
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/25, 227
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.81, Tun_Id 103, Tun_Instance 19
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 10.10.10.30* 10.10.10.81* 
+      Record   Route: 
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.118 10.10.10.117
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 14 minutes
+      Number of LSP IDs (Tun_Instances) used: 19
+    Current LSP: [ID: 19]
+      Uptime: 22 hours, 14 minutes
+    Prior LSP: [ID: 18]
+      ID: path option unknown
+      Removal Trigger: path error
+
+Name: LP-PRR-XX1638-01-to-RR-XXSPG-01-... (Tunnel104) Destination: 10.10.10.80
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type explicit (verbatim) LP104-to-RR-XXSPG-01 (Basis for Setup, path weight 0)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: disabled LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: explicit path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: enabled 
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/25, 2416
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.10.10.80, Tun_Id 104, Tun_Instance 19
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 10.10.10.30* 10.10.10.81* 10.10.10.80* 
+      Record   Route: 
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.118 10.10.10.117 10.10.10.21
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 14 minutes
+      Number of LSP IDs (Tun_Instances) used: 19
+    Current LSP: [ID: 19]
+      Uptime: 22 hours, 14 minutes
+    Prior LSP: [ID: 18]
+      ID: path option unknown
+      Removal Trigger: path error
+
+Name: Path-to-SR-XXRKO-01                 (Tunnel552) Destination: 10.169.120.96
+  Status:
+    Admin: up         Oper: up     Path: valid       Signalling: connected
+    path option 1, type dynamic (Basis for Setup, path weight 131)
+
+  Config Parameters:
+    Bandwidth: 0        kbps (Global)  Priority: 0  0   Affinity: 0x0/0xFFFF
+    Metric Type: TE (default)
+    AutoRoute: enabled  LockDown: disabled Loadshare: 0 [0] bw-based
+    auto-bw: disabled
+  Active Path Option Parameters:
+    State: dynamic path option 1 is active
+    BandwidthOverride: disabled  LockDown: disabled  Verbatim: disabled
+
+
+  InLabel  :  -
+  OutLabel : TenGigabitEthernet0/0/24, 30758
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.29, Dst 10.169.120.96, Tun_Id 552, Tun_Instance 95
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 
+      Record   Route: 
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30758) 202.152.247.115
+                       10.10.10.149(326150) 202.152.247.116 10.10.10.78
+                      (733532) 10.169.120.96 10.169.64.177(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+  History:
+    Tunnel:
+      Time since created: 22 hours, 16 minutes
+      Time since path change: 22 hours, 10 minutes
+      Number of LSP IDs (Tun_Instances) used: 95
+    Current LSP: [ID: 95]
+      Uptime: 22 hours, 10 minutes
+
+LSP Tunnel SR-XXRKO-01_to_PRR-XX1638-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.169.120.96, Dst 10.10.10.29, Tun_Id 7676, Tun_Instance 2
+    RSVP Path Info:
+      My Address: 0.0.0.0   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel SR-XXRKO-01_to_SR-XXA807-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, 617
+  Prev Hop : 10.10.10.121
+  OutLabel : TenGigabitEthernet0/0/26, 50
+  Next Hop : 10.10.10.130
+  RSVP Signalling Info:
+       Src 10.169.120.96, Dst 10.10.10.33, Tun_Id 65454, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.129   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.31(50) 10.10.10.149(50)
+                       10.10.10.32(47) 10.10.10.153(47)
+                       10.10.10.33(3) 10.10.10.154(3)
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel LTE-PRR-XXK880-02-to-PRR-XX1638-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, implicit-null
+  Prev Hop : 10.10.10.126
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.30, Dst 10.10.10.29, Tun_Id 3, Tun_Instance 8770
+    RSVP Path Info:
+      My Address: 10.10.10.29   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.126
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel PRR-XXK880-02-to-RR-XXBKL-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, 642
+  Prev Hop : 10.10.10.126
+  OutLabel : TenGigabitEthernet0/0/24, 30759
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.30, Dst 10.10.10.81, Tun_Id 101, Tun_Instance 6243
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.22 10.10.10.81 
+      Record   Route:   NONE
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel PRR-XXK880-02-to-PRR-XX1638-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/26, implicit-null
+  Prev Hop : 10.10.10.130
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.30, Dst 10.10.10.29, Tun_Id 102, Tun_Instance 1628
+    RSVP Path Info:
+      My Address: 10.10.10.29   
+      Explicit Route:  NONE
+      Record   Route:   NONE
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel LP-PRR-XXK880-02-to-RR-XXSPG-01-103 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, 608
+  Prev Hop : 10.10.10.126
+  OutLabel : TenGigabitEthernet0/0/24, implicit-null
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.30, Dst 10.10.10.80, Tun_Id 103, Tun_Instance 3898
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.80* 
+      Record   Route:  10.10.10.126
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.121
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel LP-PRR-XXK880-02-to-RR-XXBKL-01-104 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, 609
+  Prev Hop : 10.10.10.126
+  OutLabel : TenGigabitEthernet0/0/24, 29092
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.30, Dst 10.10.10.81, Tun_Id 104, Tun_Instance 8917
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.80* 10.10.10.81* 
+      Record   Route:  10.10.10.126
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.121 10.10.10.22
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel Tunnel_MA-XX2544431-01 -to_SR-XXRKO-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/26, 646
+  Prev Hop : 10.10.10.130
+  OutLabel : TenGigabitEthernet0/0/24, 30763
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.31, Dst 10.169.120.96, Tun_Id 105, Tun_Instance 44
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 
+      Record   Route:  10.10.10.130
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30763) 202.152.247.115
+                       10.10.10.149(326156) 202.152.247.116 10.10.10.78
+                      (733535) 10.169.120.96 10.169.64.177(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel Tunnel_MA-XXA807-01-to_SR-XXSMW-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/26, 644
+  Prev Hop : 10.10.10.130
+  OutLabel : TenGigabitEthernet0/0/24, 30761
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.33, Dst 10.169.120.97, Tun_Id 879, Tun_Instance 488
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.201 10.169.64.181 
+                      10.169.120.97 
+      Record   Route:  10.10.10.130 10.10.10.150 10.10.10.154
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30761) 202.152.247.115
+                       10.10.10.149(326151) 112.215.48.66 10.10.10.201
+                      (460685) 10.169.120.97(3) 10.169.64.181
+                      (3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel Tunnel_MA-XXA807-01-to_SR-XXRKO-01  is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/26, 648
+  Prev Hop : 10.10.10.130
+  OutLabel : TenGigabitEthernet0/0/24, 30765
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.33, Dst 10.169.120.96, Tun_Id 880, Tun_Instance 88
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 
+      Record   Route:  10.10.10.130 10.10.10.150 10.10.10.154
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30765) 202.152.247.115
+                       10.10.10.149(326154) 202.152.247.116 10.10.10.78
+                      (733537) 10.169.120.96 10.169.64.177(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel Tunnel_MA-XXC805-01 -to_SR-XXRKO-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/26, 645
+  Prev Hop : 10.10.10.130
+  OutLabel : TenGigabitEthernet0/0/24, 30762
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.35, Dst 10.169.120.96, Tun_Id 880, Tun_Instance 62
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 
+      Record   Route:  10.10.10.130 10.10.10.150 10.10.10.154 10.10.10.158
+                       10.10.10.162
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30762) 202.152.247.115
+                       10.10.10.149(326152) 202.152.247.116 10.10.10.78
+                      (733539) 10.169.120.96 10.169.64.177(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel Tunnel_To_SR-XXRKO-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/27, 647
+  Prev Hop : 10.10.10.134
+  OutLabel : TenGigabitEthernet0/0/24, 30764
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.39, Dst 10.169.120.96, Tun_Id 1, Tun_Instance 4310
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 
+      Record   Route:  10.10.10.134 10.10.10.178
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30764) 202.152.247.115
+                       10.10.10.149(326155) 202.152.247.116 10.10.10.78
+                      (733536) 10.169.120.96 10.169.64.177(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel Tunnel_MA-XXC806-01-to_SR-XXRKO-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/27, 649
+  Prev Hop : 10.10.10.134
+  OutLabel : TenGigabitEthernet0/0/24, 30766
+  Next Hop : 10.10.10.121
+  RSVP Signalling Info:
+       Src 10.10.10.42, Dst 10.169.120.96, Tun_Id 888, Tun_Instance 61
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route: 10.10.10.121 10.10.10.149 10.10.10.78 10.169.64.177 
+                      10.169.120.96 
+      Record   Route:  10.10.10.134 10.10.10.178 10.10.10.182 10.10.10.186
+      Tspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.80 10.10.10.121(30766) 202.152.247.115
+                       10.10.10.149(326153) 202.152.247.116 10.10.10.78
+                      (733538) 10.169.120.96 10.169.64.177(3)
+      Fspec: ave rate=0 kbits, burst=1000 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXSPG-01-PRR-XXK880-02-a is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, 45
+  Prev Hop : 10.10.10.121
+  OutLabel : TenGigabitEthernet0/0/25, implicit-null
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.30, Tun_Id 1676, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 
+      Record   Route:  10.10.10.121
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.30(3) 10.10.10.126(3)
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel Bypass->10.10.10.22->10.10.10.118 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, 635
+  Prev Hop : 10.10.10.121
+  OutLabel : TenGigabitEthernet0/0/25, implicit-null
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.30, Tun_Id 16313, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 
+      Record   Route:  10.10.10.121
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.30(3) 10.10.10.126(3)
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel Bypass->10.10.10.22->10.10.10.126 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, 650
+  Prev Hop : 10.10.10.121
+  OutLabel : TenGigabitEthernet0/0/25, implicit-null
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.30, Tun_Id 16314, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 
+      Record   Route:  10.10.10.121
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.30(3) 10.10.10.126(3)
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel Bypass->10.10.10.122 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, implicit-null
+  Prev Hop : 10.10.10.126
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.29, Tun_Id 31274, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.126 10.10.10.117 10.10.10.21
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXSPG-01-PRR-XX1638-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.29, Tun_Id 37923, Tun_Instance 2056
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.80 10.10.10.121
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXSPG-01-PRR-XX1638-01-a is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.29, Tun_Id 37924, Tun_Instance 2065
+    RSVP Path Info:
+      My Address: 0.0.0.0   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.121
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXSPG-01-PRR-XX1638-01-b is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, implicit-null
+  Prev Hop : 10.10.10.126
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.29, Tun_Id 37925, Tun_Instance 2084
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.126 10.10.10.81 10.10.10.117 10.10.10.80
+                       10.10.10.21
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXSPG-01-PRR-XX1638-01-b is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.80, Dst 10.10.10.29, Tun_Id 37926, Tun_Instance 2085
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.80 10.10.10.121
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel Bypass->10.10.10.118 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, 643
+  Prev Hop : 10.10.10.121
+  OutLabel : TenGigabitEthernet0/0/25, implicit-null
+  Next Hop : 10.10.10.126
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.30, Tun_Id 5488, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route: 10.10.10.126 
+      Record   Route:  10.10.10.121 10.10.10.22
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:  10.10.10.30(3) 10.10.10.126(3)
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel Bypass->10.10.10.21->10.10.10.122 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, implicit-null
+  Prev Hop : 10.10.10.126
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 21349, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.125   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.126 10.10.10.117
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel Bypass->10.10.10.126->10.10.10.125 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 21350, Tun_Instance 1
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.121 10.10.10.22
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXBKL-01-PRR-XX1638-01 is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 51304, Tun_Instance 2055
+    RSVP Path Info:
+      My Address: 10.10.10.122   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.80 10.10.10.121 10.10.10.81 10.10.10.22
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXBKL-01-PRR-XX1638-01-a is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, implicit-null
+  Prev Hop : 10.10.10.126
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 51305, Tun_Instance 2049
+    RSVP Path Info:
+      My Address: 0.0.0.0   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.126 10.10.10.117
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXBKL-01-PRR-XX1638-01-a is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 51306, Tun_Instance 2059
+    RSVP Path Info:
+      My Address: 0.0.0.0   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.121 10.10.10.22
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXBKL-01-PRR-XX1638-01-b is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/25, implicit-null
+  Prev Hop : 10.10.10.126
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 51307, Tun_Instance 2049
+    RSVP Path Info:
+      My Address: 0.0.0.0   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.126 10.10.10.117
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+LSP Tunnel MBH-RR-XXBKL-01-PRR-XX1638-01-b is signalled, connection is up
+  InLabel  : TenGigabitEthernet0/0/24, implicit-null
+  Prev Hop : 10.10.10.121
+  OutLabel :  - 
+  RSVP Signalling Info:
+       Src 10.10.10.81, Dst 10.10.10.29, Tun_Id 51308, Tun_Instance 2057
+    RSVP Path Info:
+      My Address: 0.0.0.0   
+      Explicit Route:  NONE
+      Record   Route:  10.10.10.121 10.10.10.22
+      Tspec: ave rate=0 kbits, burst=0 bytes, peak rate=17179869 kbits
+    RSVP Resv Info:
+      Record   Route:   NONE
+      Fspec: ave rate=0 kbits, burst=0 bytes, peak rate=0 kbits
+
+P2MP TUNNELS:
+
+P2MP SUB-LSPS:

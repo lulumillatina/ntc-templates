@@ -1,0 +1,54 @@
+Value Required NAME (\S+)
+Value DESC (\S+)
+Value DEST (\S+)
+Value ADMIN (\S+)
+Value OPER (\S+)
+Value PATH (\S+)
+Value SIGNAL (\S+)
+Value INLABEL (\S+)
+Value INLABEL_ID (\S+)
+Value OUTLABEL (\S+)
+Value OUTLABEL_ID (\S+)
+Value SRC (\S+)
+Value DST (\S+)
+Value ID (\d+)
+Value INSTANCE (\d+)
+Value List IP_ROUTE (\d+\.\d+\.\d+\.\d+|NONE)
+Value LSP_CONN (\S+)
+
+
+Start
+  ^Name: -> Continue.Record
+  ^Name:\s+${NAME}\s+${DESC}\s+Destination:\s+${DEST}\s*$$
+  ^\s+Status:
+  ^\s+Admin:\s+${ADMIN}\s+Oper:\s+${OPER}\s+Path:\s+${PATH}\s+Signalling:\s+${SIGNAL}\s*$$
+  ^\s+InLabel\s+:\s+${INLABEL}(,\s+${INLABEL_ID})?\s*$$
+  ^\s+OutLabel\s+:\s+${OUTLABEL}(,\s+${OUTLABEL_ID})?\s*$$
+  ^\s+Src\s+${SRC},\s+Dst\s+${DST},\s+Tun_Id\s+${ID},\s+Tun_Instance\s+${INSTANCE}\s*$$
+  ^\s+RSVP\s+Path\s+Info:
+  ^\s+Explicit\s+Route:\s+${IP_ROUTE},* -> Continue
+  ^\s+Explicit\s+(?:\S+\s+){2}${IP_ROUTE},* -> Continue
+  ^\s+Explicit\s+(?:\S+\s+){3}${IP_ROUTE},* -> Continue
+  ^\s+Explicit\s+(?:\S+\s+){4}${IP_ROUTE},* -> Continue
+  ^\s+Explicit\s+(?:\S+\s+){5}${IP_ROUTE},* -> Continue
+  ^\s+${IP_ROUTE},* -> Continue
+  ^\s+\d+\.\d+\.\d+\.\d+\s+${IP_ROUTE},* -> Continue
+  ^\s+(?:\d+\.\d+\.\d+\.\d+\s+){2}${IP_ROUTE},* -> Continue
+  ^\s+(?:\d+\.\d+\.\d+\.\d+\s+){3}${IP_ROUTE},* -> Continue
+  ^\s+(?:\d+\.\d+\.\d+\.\d+\s+){4}${IP_ROUTE},* -> Continue
+  ^\s+Record\s+Route:
+  ^\s+Tspec:
+  ^\s+RSVP\s+Resv\s+Info:
+  ^\s+Record\s+Route:
+  ^\s+Fspec:
+  ^\s+History:
+  ^\s+Time\s+since\s+created
+  ^LSP\s+Tunnel -> LSP 
+
+
+LSP
+  ^LSP\s+Tunnel -> Continue.Record
+  ^LSP\s+Tunnel\s+${NAME}\s+is\s+\S+,\s+connection\s+is\s+${LSP_CONN}\s*$$
+  ^\s+InLabel\s+:\s+${INLABEL}(,\s+${INLABEL_ID})?\s*$$
+  ^\s+OutLabel\s+:\s+${OUTLABEL}(,\s+${OUTLABEL_ID})?\s*$$
+  ^\s+Src\s+${SRC},\s+Dst\s+${DST},\s+Tun_Id\s+${ID},\s+Tun_Instance\s+${INSTANCE}\s*$$
