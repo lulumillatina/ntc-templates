@@ -1,0 +1,13 @@
+Value DST (\d+\.\d+\.\d+\.\d+)
+Value SRC (\d+\.\d+\.\d+\.\d+)
+Value STATE (\S+)
+Value RT (\d+)
+Value P (\S+?)
+Value ACTIVEPATH (\S+?)
+Value NAME (\S+)
+
+Start
+  ^Ingress\s+LSP:\s+\d+\s+
+  ^To\s+From\s+State\s+Rt\s+P\s+ActivePath\s+LSPname\s*$$
+  ^${DST}\s*${SRC}\s+${STATE}\s+${RT}\s+${P}?\s+${ACTIVEPATH}?\s+${NAME}\s*$$ -> Record
+  ^Total\s+\d+\s+displayed,\s+Up\s+\d+,\s+Down\s+\d+\s*$$

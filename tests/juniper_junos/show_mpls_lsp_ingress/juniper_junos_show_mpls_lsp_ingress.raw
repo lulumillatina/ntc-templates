@@ -1,0 +1,24 @@
+Ingress LSP: 20 sessions
+To              From            State Rt P     ActivePath       LSPname
+10.10.10.120   10.10.10.64   Up     0 *                      RAW-XX2282-01H
+10.10.10.220 10.10.10.64   Up     0 *                      XR-XXXXX-01-to-C-XXXXX_02
+10.10.10.58   10.10.10.64   Up     0 *                      XR-XXXXX-01-to-C-XXPRW-02
+10.10.10.11    10.10.10.64   Up     0 *     Via_RAW_XXSN0076-01_3 XR-XXXXX-01-to-RR-XX2242-01
+10.10.10.29    10.10.10.64   Up     0 *     via_RAW-XX2330-02 XR-XXXXX-01-to-RR-XX2332-01
+10.10.10.82    10.10.10.64   Up     0 *     via_RAW-XX2458-01 XR-XXXXX-01-to-RR-XX2387-01
+10.10.10.227    10.10.10.64   Up     0 *     via_RAW-XX1635R-01H XR-XXXXX-01-to-RR-XX2533084-01H
+10.10.10.79  10.10.10.64   Up     0 *                      XR-XXXXX-01_to_AG-XXPCL-01G
+10.10.10.6     10.10.10.64   Up     0 *     via_RAW-XX2305-02 XR-XXXXX-01_to_AG-XXPCL-01-RAW-XX2211-01-a
+10.10.10.53   10.10.10.64   Up     0 *                      XR-XXXXX-01_to_AG-XXPKL-01
+10.10.10.86  10.10.10.64   Up     0 *                      XR-XXXXX-01_to_C-XXXXX-01
+10.10.10.39   10.10.10.64   Up     0 *                      XR-XXXXX-01_to_C-XXPRW-01
+10.10.10.141   10.10.10.64   Up     0 *     via_RAW-BD1924-01 XR-XXXXX-01_to_RR-BD2116-01
+10.10.10.43    10.10.10.64   Up     0       via_RAW-XXB239-02H XR-XXXXX-01_to_RR-JTBYL1082-01H
+10.10.10.196   10.10.10.64   Up     0 *     via_RAW-JTKDS0925-02H XR-XXXXX-01_to_RR-JTKDS3183-01H
+10.10.10.238   10.10.10.64   Up     0       via_RAW-XX2245-01 XR-XXXXX-01_to_RR-XX1635-01
+10.10.10.146   10.10.10.64   Up     0 *     via_RAW-XX2206-02 XR-XXXXX-01_to_RR-XX2202-01
+10.10.10.127   0.0.0.0         Dn     0       -                XR-XXXXX-01_to_RR-XX2205-01
+10.10.10.206   10.10.10.64   Up     0 *     via_RAW-XXSN0073-01 XR-XXXXX-01_to_RR-XX2212-01
+10.10.10.228   10.10.10.64   Up     0 *     via_RAW-XX2290-01 XR-XXXXX-01_to_RR-XX2213-01
+10.10.10.10    10.10.10.64   Dn     0       -                XR-XXXXX-01_to_RR-XX2214-01
+Total 20 displayed, Up 20, Down 0
