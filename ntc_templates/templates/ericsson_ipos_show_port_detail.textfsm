@@ -1,0 +1,58 @@
+Value Required NAME (.+)
+Value DESC (.+)
+Value LINK_STATE (\S+)
+Value ADMIN_STATE (\S+)
+Value MTU (\d+)
+Value MAC (\S+)
+Value SPEED (\d+\s+\S+bps)
+
+
+Start
+  ^.+state\s+is\s+ -> Continue.Record
+  ^${NAME}\s+state\s+is\s+
+  ^Description\s+:\s+${DESC}\s*$$
+  ^Port\s+circuit\s+:
+  ^Link\s+state\s+:\s+${LINK_STATE}\s*$$
+  ^\s+Last\s+link\s+state\s+change\s+:
+  ^Line\s+state\s+:
+  ^Admin\s+state\s+:\s+${ADMIN_STATE}\s*$$
+  ^License\s+priority\s+:
+  ^License\s+Activated\s+:
+  ^Port\s+Type\s+:
+  ^Link\s+Dampening\s+:
+  ^Link\s+up\s+delay\s+:
+  ^Link\s+down\s+delay\s+:
+  ^Restart\s+link\s+up\s+delay\s+:
+  ^Undampened\s+line\s+state\s+:
+  ^Dampening\s+Count\s+:
+  ^Encapsulation\s+:
+  ^MTU\s+size\s+:\s+${MTU}\s+Bytes\s*$$
+  ^Storm\s+control\s+mode\s+:
+  ^Evpn\s+MH\s+ES\s+Setting\s+:
+  ^NAS-Port-Type\s+:
+  ^NAS-Port-Id\s+:
+  ^MAC\s+address\s+:\s+${MAC}\s*$$
+  ^Optical\s+Transport\s+:
+  ^Physical\s+layer\s+:
+  ^Media\s+type\s+:
+  ^Flow\s+control\s+:
+  ^Speed\s+:\s+${SPEED}\s*$$
+  ^Duplex\s+mode\s+:
+  ^Clock-Source\s+:
+  ^Link\s+Length\s+Supported\s+:
+  ^Loopback\s+:
+  ^SFP\+\s+Transceiver\s+Status
+  ^\s+Wavelength\s+:
+  ^\s+Additional\s+Features\s+:
+  ^\s+DiAW\s+Monitor\s+:
+  ^\s+Tx\s+Fault\s+:
+  ^\s+Rx\s+Fault\s+:
+  ^\s+Tx\s+Pwr\s+Measured\s+\[dbm\]\s+:
+  ^\s+Rx\s+Pwr\s+Measured\s+\[dbm\]\s+:
+  ^\s+Temperature\s+:
+  ^\s+Vcc\s+Measured\s+:
+  ^Port\s+Alarms\s+:
+  ^Link-delay-time\s+:
+  ^Last\s+line\s+state\s+down\s+:
+  ^\s+Trigger\s+faults\s+:
+  ^. -> Error
