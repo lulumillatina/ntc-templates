@@ -1,0 +1,93 @@
+ethernet 1/9 state is Up  
+Description                : RAW_XXXXX0097_03E_1/9_to_AW-XXXXX-01_xe-2/0/12;by:COLO
+Port circuit               : 1/9:511:63:31/1/0/12
+Link state                 : Up
+  Last link state change   : Oct 5 00:55:13.164
+Line state                 : Up  
+Admin state                : Up
+License priority           : 6
+License Activated          : Yes
+Port Type                  : 10ge
+Link Dampening             : enabled
+Link up delay              : 3000
+Link down delay            : 0
+Restart link up delay      : 0
+Undampened line state      : Up
+Dampening Count            : 1
+Encapsulation              : dot1q
+MTU size                   : 4500 Bytes
+Storm control mode         : off
+Evpn MH ES Setting         : off
+NAS-Port-Type              : none
+NAS-Port-Id                : none
+MAC address                : 98:7a:10:86:a6:49
+Optical Transport          : None                                    
+Physical layer             : lan-phy                                 
+Media type                 : 10GBase-LR                              
+Flow control               : off                                     
+Speed                      : 10 Gbps                                 
+Duplex mode                : full                                    
+Clock-Source               : local                                   
+Link Length Supported      : 10000 meters
+Loopback                   : off                                     
+SFP+ Transceiver Status
+ Wavelength                : 1310.00 nm                              
+ Additional Features       : None                                    
+ DiAW Monitor              : YES                                     
+ Tx Fault                  : No Fault                                
+ Rx Fault                  : No Fault                                
+ Tx Pwr Measured [dbm]     : -2.73                                   
+ Rx Pwr Measured [dbm]     : -3.30                                   
+ Temperature               : 33 C                                    
+ Vcc Measured              : 3.24 V                                  
+Port Alarms                : NONE
+Link-delay-time            : 0                         
+Last line state down       : Oct 5 00:55:09.968
+  Trigger faults           : NONE
+
+ethernet 1/10 state is Up  
+Description                : RAW_XXXXX0097_03E_1/10_to_MA_STPSO0950_01E_1/9;
+Port circuit               : 1/10:511:63:31/1/0/14
+Link state                 : Up
+  Last link state change   : Apr 5 15:43:38.412
+Line state                 : Up  
+Admin state                : Up
+License priority           : 6
+License Activated          : Yes
+Port Type                  : 10ge
+Link Dampening             : enabled
+Link up delay              : 3000
+Link down delay            : 0
+Restart link up delay      : 0
+Undampened line state      : Up
+Dampening Count            : 135
+Encapsulation              : dot1q
+MTU size                   : 4500 Bytes
+Storm control mode         : off
+Evpn MH ES Setting         : off
+NAS-Port-Type              : none
+NAS-Port-Id                : none
+MAC address                : 98:7a:10:86:a6:4a
+Optical Transport          : None                                    
+Physical layer             : lan-phy                                 
+Media type                 : 10GBase-LR                              
+Flow control               : off                                     
+Speed                      : 10 Gbps                                 
+Duplex mode                : full                                    
+Clock-Source               : local                                   
+Link Length Supported      : 10000 meters
+Loopback                   : off                                     
+SFP+ Transceiver Status
+ Wavelength                : 1310.00 nm                              
+ Additional Features       : None                                    
+ DiAW Monitor              : YES                                     
+ Tx Fault                  : No Fault                                
+ Rx Fault                  : No Fault                                
+ Tx Pwr Measured [dbm]     : -2.20                                   
+ Rx Pwr Measured [dbm]     : -3.15                                   
+ Temperature               : 33 C                                    
+ Vcc Measured              : 3.28 V                                  
+Port Alarms                : NONE
+Link-delay-time            : 0                         
+Last line state down       : Apr 5 15:43:34.899
+  Trigger faults           : NONE
