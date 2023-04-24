@@ -1,0 +1,109 @@
+Context   :local                          Context id  : 0x40080001  
+------------------------------------------------------------------
+
+Intf name:      loopback-0
+Intf state:     Up (Loopback)             MTU:            1500                 
+IP address:     10.100.10.12              Prefix len:     32                   
+RSVP instance:  1                         
+MPLS instance:  1                         
+Number of Bound Circuits (incl. dynamic) = 1
+
+Intf name:      vi_1/10_10G
+Intf state:     Up                        MTU:            4500                 
+Description:    RAW_XXXXX0097_03E_1/10_to_XX_STPSO0950_01E_1/9;by:DWDM
+IP address:     10.100.100.14             Prefix len:     31                   
+RSVP instance:  1                         
+MPLS instance:  1                         
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 1
+Bindings: (Total Bound Circuits 1)
+Encapsulation  Circuit
+ethernet       1/10
+
+Intf name:      vi_1/13_10G
+Intf state:     UnBound                   MTU:            0                    
+Description:    BB_GSM_1x10GE_to_1/13_RAW_SGKDI0055_05E_Via_FO_Leased
+IP address:     10.100.100.12             Prefix len:     31                   
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0
+
+Intf name:      vi_1/9_10G
+Intf state:     Up                        MTU:            4500                 
+Description:    RAW_XXXXX0097_03E_1/9_to_XX-MKTBL-01_xe-2/0/12;by:COLO
+IP address:     10.100.100.8              Prefix len:     31                   
+RSVP instance:  1                         
+MPLS instance:  1                         
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 1
+Bindings: (Total Bound Circuits 1)
+Encapsulation  Circuit
+ethernet       lg id 1
+
+Context   :Abis_IP                        Context id  : 0x40080002  
+------------------------------------------------------------------
+
+Intf name:      Virtual_Interface_1/5.200
+Intf state:     UnBound                   MTU:            0                    
+Description:    2G Abis Traffic
+IP address:     
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0
+
+Context   :Inband-RTN                     Context id  : 0x40080003  
+------------------------------------------------------------------
+
+Intf name:      Virtual_Interface_1/5.3000
+Intf state:     UnBound                   MTU:            0                    
+Description:    O&M for MW
+IP address:     
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0
+
+Context   :IuB_UP                         Context id  : 0x40080004  
+------------------------------------------------------------------
+
+Intf name:      Virtual_Interface_1/5.300
+Intf state:     UnBound                   MTU:            0                    
+Description:    XX XXXXX
+IP address:     
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0
+
+Context   :LTE-S1X2                       Context id  : 0x40080005  
+------------------------------------------------------------------
+
+Intf name:      Virtual_Interface_1/5.400
+Intf state:     UnBound                   MTU:            0                    
+Description:    LTE S1X2 Traffic
+IP address:     
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0
+
+Context   :OM-HWI                         Context id  : 0x40080006  
+------------------------------------------------------------------
+
+Intf name:      Virtual_Interface_1/5.1000
+Intf state:     UnBound                   MTU:            0                    
+Description:    O&M- Ran Traffic
+IP address:     
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0
+
+Context   :OM-Power                       Context id  : 0x40080007  
+------------------------------------------------------------------
+
+Intf name:      Virtual_Interface_1/5.3001
+Intf state:     UnBound                   MTU:            0                    
+Description:    O&M for Power devices
+IP address:     
+Resoln type:    Arp                       ARP timeout:    3600                 
+ARP proxy:      Disabled                  ARP secured:    Disabled             
+Number of Bound Circuits (incl. dynamic) = 0

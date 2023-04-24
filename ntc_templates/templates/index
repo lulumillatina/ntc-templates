@@ -466,7 +466,9 @@ dell_powerconnect_show_interfaces_status.textfsm, .*, dell_powerconnect, sh[[ow]
 
 dlink_ds_show_arpentry.textfsm, .*, dlink_ds, sh[[ow]] arpe[[ntry]]
 
+ericsson_ipos_show_ip_interface_all-context.textfsm, .*, ericsson_ipos, sh[[ow]] ip int[[erface]] all-context
 ericsson_ipos_show_isis_adjacency.textfsm, .*, ericsson_ipos, sh[[ow]] isis adja[[cency]]
+ericsson_ipos_show_port_detail.textfsm, .*, ericsson_ipos, sh[[ow]] port detail
 ericsson_ipos_show_version.textfsm, .*, ericsson_ipos, sh[[ow]] ver[[sion]]
 ericsson_ipos_show_arp.textfsm, .*, ericsson_ipos, sh[[ow]] ar[[p]]
 
