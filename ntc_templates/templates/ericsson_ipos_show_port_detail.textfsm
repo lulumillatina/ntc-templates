@@ -36,7 +36,7 @@ Start
   ^Physical\s+layer\s+:
   ^Media\s+type\s+:
   ^Flow\s+control\s+:
-  ^Speed\s+:\s+${SPEED}\s*$$
+  ^Speed\s+:\s+${SPEED}\s*
   ^Duplex\s+mode\s+:
   ^Clock-Source\s+:
   ^Link\s+Length\s+Supported\s+:
@@ -55,4 +55,3 @@ Start
   ^Link-delay-time\s+:
   ^Last\s+line\s+state\s+down\s+:
   ^\s+Trigger\s+faults\s+:
-  ^. -> Error
