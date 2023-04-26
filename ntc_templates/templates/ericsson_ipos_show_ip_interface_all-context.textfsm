@@ -13,7 +13,7 @@ Start
   ^Context\s+:${CONTEXT}\s+Context\s+id\s+:\s+${CONTEXT_ID}\s*$$
   ^-+
   ^Intf\s+name:\s+ -> Continue.Record
-  ^Intf\s+name:\s+${NAME}\s*$$
+  ^Intf\s+name:\s+${INTERFACE}\s*$$
   ^Intf\s+state:\s+${STATE}\s+MTU:\s+${MTU}\s*$$
   ^Description:\s+${DESC}\s*$$
   ^IP\s+address:\s+${IP}?(\s+Prefix\s+len:\s+)?${PREFIX}?\s*$$
