@@ -2,6 +2,7 @@ Value Required INTERFACE (.+)
 Value DESC (.+)
 Value LINK_STATE (\S+)
 Value ADMIN_STATE (\S+)
+Value PORT_TYPE (\S+)
 Value MTU (\d+)
 Value MAC (\S+)
 Value SPEED (\d+\s+\S+bps)
@@ -9,7 +10,7 @@ Value SPEED (\d+\s+\S+bps)
 
 Start
   ^.+state\s+is\s+ -> Continue.Record
-  ^${NAME}\s+state\s+is\s+
+  ^${INTERFACE}\s+state\s+is\s+
   ^Description\s+:\s+${DESC}\s*$$
   ^Port\s+circuit\s+:
   ^Link\s+state\s+:\s+${LINK_STATE}\s*$$
@@ -18,7 +19,7 @@ Start
   ^Admin\s+state\s+:\s+${ADMIN_STATE}\s*$$
   ^License\s+priority\s+:
   ^License\s+Activated\s+:
-  ^Port\s+Type\s+:
+  ^Port\s+Type\s+:\s+${PORT_TYPE}\s*$$
   ^Link\s+Dampening\s+:
   ^Link\s+up\s+delay\s+:
   ^Link\s+down\s+delay\s+:
