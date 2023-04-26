@@ -1,4 +1,4 @@
-Value Required NAME (.+)
+Value Required INTERFACE (.+)
 Value DESC (.+)
 Value LINK_STATE (\S+)
 Value ADMIN_STATE (\S+)

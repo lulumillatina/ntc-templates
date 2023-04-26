@@ -1,4 +1,4 @@
-Value Required NAME (\S+)
+Value Required INTERFACE (\S+)
 Value Required STATE (\S+|Up\s+\(Loopback\))
 Value Required MTU (\d+)
 Value DESC (.+)
