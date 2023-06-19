@@ -1,0 +1,19 @@
+Value Required NAME (\S+)
+Value ID (\d+)
+Value SRC (\S+)
+Value DST (\S+)
+Value ORIGIN (\S+)
+Value ADMIN (\S+)
+Value INTFD (\S+)
+Value INTFU (\S+)
+Value HOP (\d+)
+
+Start
+  ^\s+---\s+RSVP\s+ -> Continue.Record
+  ^\s+---\s+RSVP\s+\S+\s+${NAME}\s+\(Tunnel\s+ID:\s+${ID}\)\s+---
+  ^Ingress\s+:\s+${SRC}\s+Endpoint\s+:\s+${DST}\s*$$
+  ^Origin\s+:\s+${ORIGIN}\s+LSP\s+State\s+:\s+${ADMIN}\s*$$
+  ^Downstream\s+Intf\s+Name:\s+${INTFD}\s*$$
+  ^Upstream\s+Intf\s+Name\s+:\s+${INTFU}
+  ^Recorded\s+Route\s+\(hops:\s+${HOP}\)
+

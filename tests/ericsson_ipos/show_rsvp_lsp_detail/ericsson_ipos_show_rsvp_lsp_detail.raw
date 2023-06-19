@@ -1,0 +1,371 @@
+
+                --- RSVP LSP XXX_XXXXX0112_01E_to_XX-MKMKT-01 (Tunnel ID: 1) ---
+
+Ingress             : 10.100.10.114   Endpoint            : 100.100.100.171
+Origin              : Ingress         LSP State           : Up             
+Extended Tunnel ID  : 10.100.10.114   LSP ID              : 1208           
+Traffic-Eng         : default         State Transitions   : 111            
+Downstream Nhop     : 100.100.100.171 Downstream Intf     : 10.100.100.4   
+Downstream Intf Name: vi_1/9_10G          
+Downstream Nbr      : 10.100.100.5    Downstream Label    : 3              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Downstream Tx  : 22              Last Downstream Rx  : 6              
+Next Timer in (sec) : 0               Lifetime (sec)      : 157            
+Time to Die (sec)   : 151             B/W (Bytes/sec)     : 0              
+LSP cct             : 255/3:511:63:31/0/1/1
+IGP Shortcut        : Disabled        Exclusive XXpping   : No             
+Tunnel Shortcut     : Disabled       
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Use Explicit Route  : No              Record Route        : Yes            
+Explicit Route      : 
+Recorded Route (hops: 2): 
+        100.100.100.171/32 
+        10.100.100.5/32  Label flXXs 1, value 3
+
+                --- RSVP LSP XXX_XXXXX0112_01E_to_XX-MKKDR-01 (Tunnel ID: 2) ---
+
+Ingress             : 10.100.10.114   Endpoint            : 100.100.100.217
+Origin              : Ingress         LSP State           : Up             
+Extended Tunnel ID  : 10.100.10.114   LSP ID              : 678            
+Traffic-Eng         : default         State Transitions   : 75             
+Downstream Nhop     : 100.100.100.217 Downstream Intf     : 10.100.100.4   
+Downstream Intf Name: vi_1/9_10G          
+Downstream Nbr      : 10.100.100.5    Downstream Label    : 408416         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Downstream Tx  : 25              Last Downstream Rx  : 4              
+Next Timer in (sec) : 17              Lifetime (sec)      : 157            
+Time to Die (sec)   : 152             B/W (Bytes/sec)     : 0              
+LSP cct             : 255/3:511:63:31/0/1/2
+IGP Shortcut        : Disabled        Exclusive XXpping   : No             
+Tunnel Shortcut     : Disabled       
+Nnhop Label         : 3              
+Nnhop Addr:         : 10.100.100.5 100.100.100.217 100.100.10.176
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Use Explicit Route  : No              Record Route        : Yes            
+Explicit Route      : 
+Recorded Route (hops: 4): 
+        100.100.100.171/32 (Protection Available)
+        10.100.100.5/32 (Protection Available), Label flXXs 1, value 408416
+        100.100.100.217/32 
+        100.100.10.176/32  Label flXXs 1, value 3
+
+                --- RSVP LSP XXX_XXXXX0112_01E_to_XXX_XXXXX0112_01E (Tunnel ID: 3) ---
+
+Ingress             : 10.100.10.114   Endpoint            : 10.100.10.115  
+Origin              : Ingress         LSP State           : Up             
+Extended Tunnel ID  : 10.100.10.114   LSP ID              : 2037           
+Traffic-Eng         : default         State Transitions   : 233            
+Downstream Nhop     : 10.100.10.115   Downstream Intf     : 10.100.100.8   
+Downstream Intf Name: vi_1/13_10G         
+Downstream Nbr      : 10.100.100.9    Downstream Label    : 0              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Downstream Tx  : 16              Last Downstream Rx  : 22             
+Next Timer in (sec) : 7               Lifetime (sec)      : 157            
+Time to Die (sec)   : 135             B/W (Bytes/sec)     : 0              
+LSP cct             : 255/3:511:63:31/0/1/3
+IGP Shortcut        : Disabled        Exclusive XXpping   : No             
+Tunnel Shortcut     : Disabled       
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Use Explicit Route  : No              Record Route        : Yes            
+Explicit Route      : 
+Recorded Route (hops: 1): 
+        10.100.10.115/32  Label flXXs 1, value 0
+
+                --- RSVP LSP XXX_SGADL0153_01E_to_XXX_XXXXX0112_01E (Tunnel ID: 3) ---
+
+Ingress             : 10.100.10.115   Endpoint            : 10.100.10.114  
+Origin              : Egress          LSP State           : Up             
+Extended Tunnel ID  : 10.100.10.115   LSP ID              : 9              
+Traffic-Eng         : None            State Transitions   : 1              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 25              Last Upstream Rx    : 17             
+Upstream Intf       : 10.100.100.8    Upstream Nhop       : 10.100.100.9   
+Upstream Intf Name  : vi_1/13_10G                         :                
+Upstream Nbr        : 10.100.100.9    Upstream Label      : 0              
+Next Timer in (sec) : 14              Lifetime (sec)      : 157            
+Time to Die (sec)   : 139             B/W (Bytes/sec)     : 0              
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+
+                --- RSVP LSP XX_XXXXX0113_01E_to_XX-MKKXX-01 (Tunnel ID: 1) ---
+
+Ingress             : 10.100.10.133   Endpoint            : 10.100.100.32  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.100.10.133   LSP ID              : 1025           
+Traffic-Eng         : None            State Transitions   : 1              
+Downstream Nhop     : 10.100.100.32   Downstream Intf     : 10.100.100.4   
+Downstream Intf Name: vi_1/9_10G          
+Downstream Nbr      : 10.100.100.5    Downstream Label    : 410299         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 16              Last Upstream Rx    : 10             
+Upstream Intf       : 10.100.100.38   Upstream Nhop       : 10.100.100.39  
+Upstream Intf Name  : vi_1/11_10G                         :                
+Upstream Nbr        : 10.100.100.39   Upstream Label      : 589828         
+Last Downstream Tx  : 11              Last Downstream Rx  : 32             
+Next Timer in (sec) : 8               Lifetime (sec)      : 157            
+Time to Die (sec)   : 147             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 567476         
+Nnhop Addr:         : 10.100.100.5 100.100.100.60 100.100.10.105
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 8): 
+        100.100.100.171/32 (Protection Available)
+        10.100.100.5/32 (Protection Available), Label flXXs 1, value 410299
+        100.100.100.60/32 (Protection Available)
+        100.100.10.105/32 (Protection Available), Label flXXs 1, value 567476
+        100.100.100.20/32 
+        100.100.10.169/32  Label flXXs 1, value 170034
+        10.100.100.32/32 
+        10.100.100.1/32  Label flXXs 1, value 3
+
+                --- RSVP LSP XX_SGBAU0025_01E_to_EC-MKMDG-01 (Tunnel ID: 1) ---
+
+Ingress             : 10.219.56.100   Endpoint            : 10.100.100.0   
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.219.56.100   LSP ID              : 2037           
+Traffic-Eng         : None            State Transitions   : 1              
+Downstream Nhop     : 10.100.100.0    Downstream Intf     : 10.100.100.4   
+Downstream Intf Name: vi_1/9_10G          
+Downstream Nbr      : 10.100.100.5    Downstream Label    : 410121         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 19              Last Upstream Rx    : 28             
+Upstream Intf       : 10.100.100.10   Upstream Nhop       : 10.100.100.11  
+Upstream Intf Name  : vi_1/10_10G                         :                
+Upstream Nbr        : 10.100.100.11   Upstream Label      : 589835         
+Last Downstream Tx  : 13              Last Downstream Rx  : 14             
+Next Timer in (sec) : 16              Lifetime (sec)      : 157            
+Time to Die (sec)   : 128             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 303520         
+Nnhop Addr:         : 10.100.100.5 100.100.100.217 100.100.10.176
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 5): 
+        100.100.100.171/32 (Protection Available)
+        10.100.100.5/32 (Protection Available), Label flXXs 1, value 410121
+        100.100.100.217/32 
+        100.100.10.176/32  Label flXXs 1, value 303520
+        10.100.100.0/32  Label flXXs 1, value 0
+
+                --- RSVP LSP XX_SGRMB0146_01E_to_XX-MKKXX-01 (Tunnel ID: 1) ---
+
+Ingress             : 10.219.56.101   Endpoint            : 10.100.100.32  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.219.56.101   LSP ID              : 1005           
+Traffic-Eng         : None            State Transitions   : 1              
+Downstream Nhop     : 10.100.10.115   Downstream Intf     : 10.100.100.8   
+Downstream Intf Name: vi_1/13_10G         
+Downstream Nbr      : 10.100.100.9    Downstream Label    : 589824         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 4               Last Upstream Rx    : 25             
+Upstream Intf       : 10.100.100.10   Upstream Nhop       : 10.100.100.11  
+Upstream Intf Name  : vi_1/10_10G                         :                
+Upstream Nbr        : 10.100.100.11   Upstream Label      : 589832         
+Last Downstream Tx  : 7               Last Downstream Rx  : 24             
+Next Timer in (sec) : 19              Lifetime (sec)      : 157            
+Time to Die (sec)   : 131             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 303517         
+Nnhop Addr:         : 100.100.100.217 10.100.100.7 100.100.100.171
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 11): 
+        10.100.10.115/32  Label flXXs 1, value 589824
+        100.100.100.217/32 (Protection Available)
+        10.100.100.7/32 (Protection Available), Label flXXs 1, value 303517
+        100.100.100.171/32 (Protection Available)
+        100.100.10.177/32 (Protection Available), Label flXXs 1, value 410118
+        100.100.100.60/32 (Protection Available)
+        100.100.10.105/32 (Protection Available), Label flXXs 1, value 517760
+        100.100.100.20/32 
+        100.100.10.169/32  Label flXXs 1, value 211827
+        10.100.100.32/32 
+        10.100.100.1/32  Label flXXs 1, value 3
+
+                --- RSVP LSP XX_SGRMB0146_01E_to_XXX_SGKDI0055_01E (Tunnel ID: 2) ---
+
+Ingress             : 10.219.56.101   Endpoint            : 10.100.100.0   
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.219.56.101   LSP ID              : 773            
+Traffic-Eng         : None            State Transitions   : 1              
+Downstream Nhop     : 10.100.100.0    Downstream Intf     : 10.100.100.4   
+Downstream Intf Name: vi_1/9_10G          
+Downstream Nbr      : 10.100.100.5    Downstream Label    : 410120         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 2               Last Upstream Rx    : 27             
+Upstream Intf       : 10.100.100.10   Upstream Nhop       : 10.100.100.11  
+Upstream Intf Name  : vi_1/10_10G                         :                
+Upstream Nbr        : 10.100.100.11   Upstream Label      : 589834         
+Last Downstream Tx  : 28              Last Downstream Rx  : 14             
+Next Timer in (sec) : 0               Lifetime (sec)      : 157            
+Time to Die (sec)   : 130             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 303519         
+Nnhop Addr:         : 10.100.100.5 100.100.100.217 100.100.10.176
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 5): 
+        100.100.100.171/32 (Protection Available)
+        10.100.100.5/32 (Protection Available), Label flXXs 1, value 410120
+        100.100.100.217/32 
+        100.100.10.176/32  Label flXXs 1, value 303519
+        10.100.100.0/32  Label flXXs 1, value 0
+
+                --- RSVP LSP XXX_SGKDI0055_01E_to_XX_SGRMB0146_01E (Tunnel ID: 7) ---
+
+Ingress             : 10.100.100.0    Endpoint            : 10.219.56.101  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.100.100.0    LSP ID              : 5726           
+Traffic-Eng         : None            State Transitions   : 3              
+Downstream Nhop     : 10.219.56.101   Downstream Intf     : 10.100.100.10  
+Downstream Intf Name: vi_1/10_10G         
+Downstream Nbr      : 10.100.100.11   Downstream Label    : 589824         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 39              Last Upstream Rx    : 20             
+Upstream Intf       : 10.100.100.4    Upstream Nhop       : 10.100.100.5   
+Upstream Intf Name  : vi_1/9_10G                          :                
+Upstream Nbr        : 10.100.100.5    Upstream Label      : 589829         
+Last Downstream Tx  : 34              Last Downstream Rx  : 11             
+Next Timer in (sec) : 0               Lifetime (sec)      : 157            
+Time to Die (sec)   : 137             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 0              
+Nnhop Addr:         : 10.219.56.101
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 2): 
+        10.100.10.116/32  Label flXXs 1, value 589824
+        10.219.56.101/32  Label flXXs 1, value 0
+
+                --- RSVP LSP backup_XX_SGRMB0146_01E (Tunnel ID: 7) ---
+
+Ingress             : 10.100.100.0    Endpoint            : 10.219.56.101  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.100.100.0    LSP ID              : 39992          
+Traffic-Eng         : None            State Transitions   : 1              
+Downstream Nhop     : 10.219.56.101   Downstream Intf     : 10.100.100.10  
+Downstream Intf Name: vi_1/10_10G         
+Downstream Nbr      : 10.100.100.11   Downstream Label    : 589827         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 12              Last Upstream Rx    : 0              
+Upstream Intf       : 10.100.100.8    Upstream Nhop       : 10.100.100.9   
+Upstream Intf Name  : vi_1/13_10G                         :                
+Upstream Nbr        : 10.100.100.9    Upstream Label      : 589831         
+Last Downstream Tx  : 0               Last Downstream Rx  : 11             
+Next Timer in (sec) : 0               Lifetime (sec)      : 157            
+Time to Die (sec)   : 156             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 0              
+Nnhop Addr:         : 10.219.56.101
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 2): 
+        10.100.10.116/32  Label flXXs 1, value 589827
+        10.219.56.101/32  Label flXXs 1, value 0
+
+                --- RSVP LSP backup_to_XX_SGRMB0244_01E (Tunnel ID: 17) ---
+
+Ingress             : 10.100.100.0    Endpoint            : 10.100.10.136  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.100.100.0    LSP ID              : 33496          
+Traffic-Eng         : None            State Transitions   : 3              
+Downstream Nhop     : 10.100.10.136   Downstream Intf     : 10.100.100.8   
+Downstream Intf Name: vi_1/13_10G         
+Downstream Nbr      : 10.100.100.9    Downstream Label    : 589833         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 12              Last Upstream Rx    : 30             
+Upstream Intf       : 10.100.100.4    Upstream Nhop       : 10.100.100.5   
+Upstream Intf Name  : vi_1/9_10G                          :                
+Upstream Nbr        : 10.100.100.5    Upstream Label      : 589837         
+Last Downstream Tx  : 19              Last Downstream Rx  : 39             
+Next Timer in (sec) : 22              Lifetime (sec)      : 157            
+Time to Die (sec)   : 127             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 589827         
+Nnhop Addr:         : 10.100.10.139 10.100.10.138 10.100.10.136
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 4): 
+        10.100.10.115/32  Label flXXs 1, value 589833
+        10.100.10.139/32  Label flXXs 1, value 589827
+        10.100.10.138/32  Label flXXs 1, value 589827
+        10.100.10.136/32  Label flXXs 1, value 0
+
+                --- RSVP LSP x (Tunnel ID: 21) ---
+
+Ingress             : 10.100.100.0    Endpoint            : 10.100.10.137  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 10.100.100.0    LSP ID              : 33493          
+Traffic-Eng         : None            State Transitions   : 3              
+Downstream Nhop     : 10.100.10.137   Downstream Intf     : 10.100.100.8   
+Downstream Intf Name: vi_1/13_10G         
+Downstream Nbr      : 10.100.100.9    Downstream Label    : 589835         
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 29              Last Upstream Rx    : 9              
+Upstream Intf       : 10.100.100.4    Upstream Nhop       : 10.100.100.5   
+Upstream Intf Name  : vi_1/9_10G                          :                
+Upstream Nbr        : 10.100.100.5    Upstream Label      : 589842         
+Last Downstream Tx  : 23              Last Downstream Rx  : 13             
+Next Timer in (sec) : 7               Lifetime (sec)      : 157            
+Time to Die (sec)   : 148             B/W (Bytes/sec)     : 0              
+Nnhop Label         : 589829         
+Nnhop Addr:         : 10.100.10.139 10.100.10.138 10.100.10.136
+Session Attr        : Local-Protect Node-Protect XXy-Reroute Record-Label
+Recorded Route (hops: 5): 
+        10.100.10.115/32  Label flXXs 1, value 589835
+        10.100.10.139/32  Label flXXs 1, value 589829
+        10.100.10.138/32  Label flXXs 1, value 589829
+        10.100.10.136/32  Label flXXs 1, value 589827
+        10.100.10.137/32  Label flXXs 1, value 0
+
+                --- RSVP LSP Bypass->10.219.192.6 (Tunnel ID: 8329) ---
+
+Ingress             : 100.100.100.217 Endpoint            : 10.100.10.115  
+Origin              : Transit         LSP State           : Up             
+Extended Tunnel ID  : 100.100.100.217 LSP ID              : 1              
+Traffic-Eng         : None            State Transitions   : 1              
+Downstream Nhop     : 10.100.100.9    Downstream Intf     : 10.100.100.8   
+Downstream Intf Name: vi_1/13_10G         
+Downstream Nbr      : 10.100.100.9    Downstream Label    : 0              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 23              Last Upstream Rx    : 10             
+Upstream Intf       : 10.100.100.4    Upstream Nhop       : 10.100.100.5   
+Upstream Intf Name  : vi_1/9_10G                          :                
+Upstream Nbr        : 10.100.100.5    Upstream Label      : 589857         
+Last Downstream Tx  : 0               Last Downstream Rx  : 15             
+Next Timer in (sec) : 1               Lifetime (sec)      : 157            
+Time to Die (sec)   : 146             B/W (Bytes/sec)     : 0              
+Session Attr        : XXy-Reroute Record-Label
+Recorded Route (hops: 1): 
+        10.100.10.115/32  Label flXXs 1, value 0
+
+                --- RSVP LSP XX-MKKDR-01-XXX_XXXXX0112_01E (Tunnel ID: 24991) ---
+
+Ingress             : 100.100.100.217 Endpoint            : 10.100.10.114  
+Origin              : Egress          LSP State           : Up             
+Extended Tunnel ID  : 100.100.100.217 LSP ID              : 350            
+Traffic-Eng         : None            State Transitions   : 1              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 27              Last Upstream Rx    : 26             
+Upstream Intf       : 10.100.100.4    Upstream Nhop       : 10.100.100.5   
+Upstream Intf Name  : vi_1/9_10G                          :                
+Upstream Nbr        : 10.100.100.5    Upstream Label      : 0              
+Next Timer in (sec) : 4               Lifetime (sec)      : 157            
+Time to Die (sec)   : 130             B/W (Bytes/sec)     : 0              
+Session Attr        : Record-Label
+
+                --- RSVP LSP MBH-XX-MKMKT-01-XXX_XXXXX0112_01E (Tunnel ID: 33526) ---
+
+Ingress             : 100.100.100.171 Endpoint            : 10.100.10.114  
+Origin              : Egress          LSP State           : Up             
+Extended Tunnel ID  : 100.100.100.171 LSP ID              : 1112           
+Traffic-Eng         : None            State Transitions   : 1              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 3               Last Upstream Rx    : 28             
+Upstream Intf       : 10.100.100.4    Upstream Nhop       : 10.100.100.5   
+Upstream Intf Name  : vi_1/9_10G                          :                
+Upstream Nbr        : 10.100.100.5    Upstream Label      : 0              
+Next Timer in (sec) : 35              Lifetime (sec)      : 157            
+Time to Die (sec)   : 128             B/W (Bytes/sec)     : 0              
+Session Attr        : Record-Label
+
+                --- RSVP LSP Bypass->10.219.192.4 (Tunnel ID: 33604) ---
+
+Ingress             : 100.100.100.171 Endpoint            : 10.100.10.114  
+Origin              : Egress          LSP State           : Up             
+Extended Tunnel ID  : 100.100.100.171 LSP ID              : 1              
+Traffic-Eng         : None            State Transitions   : 1              
+Setup Priority      : 7               Holding Priority    : 0              
+Last Upstream Tx    : 5               Last Upstream Rx    : 32             
+Upstream Intf       : 10.100.100.8    Upstream Nhop       : 10.100.100.9   
+Upstream Intf Name  : vi_1/13_10G                         :                
+Upstream Nbr        : 10.100.100.9    Upstream Label      : 0              
+Next Timer in (sec) : 26              Lifetime (sec)      : 157            
+Time to Die (sec)   : 125             B/W (Bytes/sec)     : 0              
+Session Attr        : XXy-Reroute Record-Label
