@@ -1,0 +1,16 @@
+---
+parsed_sample:
+  - origin: "Ingress"
+    name: "XX-JKSTJ-01-to-XXX-JKACL-01"
+    state: "Up"
+    src: "10.100.1.22"
+    dst: "10.100.1.20"
+    ip_route: []
+    lsp_conn: ""
+  - origin: "Egress"
+    name: "XX-JKSTJ-01-to-XXX-JKGLR-01"
+    state: "Up"
+    src: "10.100.1.22"
+    dst: "10.100.1.22"
+    ip_route: []
+    lsp_conn: ""
