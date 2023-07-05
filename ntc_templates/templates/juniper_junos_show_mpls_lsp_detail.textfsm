@@ -8,23 +8,42 @@ Value LSP_CONN (\S+)
 
 
 Start
-  ^${ORIGIN}\s+LSP:\s+\d+\s+session
-  ^${DST}\s*$$ -> Continue.Record
-  ^\s+From:\s+${SRC},\s+State:\s+${STATE},\s+ActiveRoute:\s+\d+,\s+LSPname:\s+${NAME}\s*$$
-  ^\s+ActivePath:\s+\S+
-  ^\s+LSPtype:.+
-  ^\s+LoadBalance:.+
-  ^\s+Encoding\s+type:.+
-  ^\s+\d+\.\d+\.\d+\.\d+\s+${IP_ROUTE},* -> Continue
-  # ^\s+(?:\d+\.\d+\.\d+\.\d+\s+){2}${IP_ROUTE},* -> Continue
-  # ^\s+(?:\d+\.\d+\.\d+\.\d+\s+){3}${IP_ROUTE},* -> Continue
-  # ^\s+(?:\d+\.\d+\.\d+\.\d+\s+){4}${IP_ROUTE},* -> Continue
-  ^Total\s+\d+\s+displayed,\s+Up\s+\d+,\s+Down\s+\d+
-  ^Egress\s+LSP: -> Egress 
-
-Egress
-  ^${ORIGIN}\s+LSP:\s+\d+\s+session
-  ^${DST}\s*$$ -> Continue.Record
-  ^\s+From:\s+${SRC},\s+LSPstate:\s+${STATE},\s+ActiveRoute:\s+\d+\s*$$
+  ^\S+.* -> Continue.Record
+  ^${ORIGIN}\s+LSP:\s+\d+\ssessions 
+  ^${DST} 
+  ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+,\s[\w-]+:\s${NAME}
+  ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+ 
   ^\s+LSPname:\s+${NAME}\s*$$
-  ^Total\s+\d+\s+displayed,\s+Up\s+\d+,\s+Down\s+\d+
+  ^\s+${IP_ROUTE} +S -> Continue
+  ^(\s+${IP_ROUTE} +S){2} -> Continue
+  ^(\s+${IP_ROUTE} +S){3} -> Continue
+  ^(\s+${IP_ROUTE} +S){4} -> Continue
+  ^(\s+${IP_ROUTE} +S){5} -> Continue
+  ^(\s+${IP_ROUTE} +S){6} -> Continue
+  ^(\s+${IP_ROUTE} +S){7} -> Continue
+  ^(\s+${IP_ROUTE} +S){8} -> Continue
+  ^(\s+${IP_ROUTE} +S){9} -> Continue
+  ^\s+Record route:\s${IP_ROUTE} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){2} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){3} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){4} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){5} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){6} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){7} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){8} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){9} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){10} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){11} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){12} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){13} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){14} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){15} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){16} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){17} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){18} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){19} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){20} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){21} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){22} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){23} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){24} -> Continue
