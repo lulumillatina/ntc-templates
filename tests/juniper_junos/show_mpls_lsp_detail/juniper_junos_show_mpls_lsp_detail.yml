@@ -6,6 +6,7 @@ parsed_sample:
     activepath: ""
     src: "10.100.1.22"
     dst: "10.100.1.15"
+    prcvfrom: ""
     ip_route:
       - "10.100.1.101"
       - "10.100.1.97"
@@ -22,6 +23,7 @@ parsed_sample:
     activepath: ""
     src: "10.100.1.22"
     dst: "10.100.1.20"
+    prcvfrom: ""
     ip_route:
       - "10.100.1.101"
       - "10.100.1.97"
@@ -31,6 +33,7 @@ parsed_sample:
     activepath: ""
     src: "10.100.1.15"
     dst: "10.100.1.22"
+    prcvfrom: "10.100.1.101 (xe-0/3/0.0)"
     ip_route:
       - "10.100.1.15"
       - "10.100.1.77"
@@ -62,6 +65,7 @@ parsed_sample:
     activepath: ""
     src: "10.100.1.20"
     dst: "10.100.1.22"
+    prcvfrom: "10.100.1.101 (xe-0/3/0.0)"
     ip_route:
       - "10.100.1.20"
       - "10.100.1.97"

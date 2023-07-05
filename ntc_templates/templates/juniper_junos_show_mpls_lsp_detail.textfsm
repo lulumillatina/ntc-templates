@@ -4,6 +4,7 @@ Value STATE (\S+)
 Value ACTIVEPATH (\S+)
 Value SRC (\d+\.\d+\.\d+\.\d+)
 Value DST (\d+\.\d+\.\d+\.\d+)
+Value PRCVFROM (\S+\s+\S+)
 Value List IP_ROUTE (\d+\.\d+\.\d+\.\d+|NONE)
 
 
@@ -15,6 +16,7 @@ Start
   ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+ 
   ^\s+LSPname:\s+${NAME}\s*$$
   ^\s+ActivePath:\s+${STATE}\s*$$
+  ^\s+PATH\s+rcvfrom:\s+${PRCVFROM}\s+
   ^\s+${IP_ROUTE} +S -> Continue
   ^(\s+${IP_ROUTE} +S){2} -> Continue
   ^(\s+${IP_ROUTE} +S){3} -> Continue
