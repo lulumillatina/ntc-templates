@@ -1,0 +1,52 @@
+Value Filldown ORIGIN (\S+)
+Value Required NAME (\S+)
+Value STATE (\S+)
+Value ACTIVEPATH (\S+)
+Value SRC (\d+\.\d+\.\d+\.\d+)
+Value DST (\d+\.\d+\.\d+\.\d+)
+Value PRCVFROM (\S+\s+\S+)
+Value List IP_ROUTE (\d+\.\d+\.\d+\.\d+|NONE)
+
+
+Start
+  ^\S+.* -> Continue.Record
+  ^${ORIGIN}\s+LSP:\s+\d+\ssessions 
+  ^${DST} 
+  ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+,\s[\w-]+:\s${NAME}
+  ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+ 
+  ^\s+LSPname:\s+${NAME}\s*$$
+  ^\s+ActivePath:\s+${STATE}\s*$$
+  ^\s+PATH\s+rcvfrom:\s+${PRCVFROM}\s+
+  ^\s+${IP_ROUTE} +S -> Continue
+  ^(\s+${IP_ROUTE} +S){2} -> Continue
+  ^(\s+${IP_ROUTE} +S){3} -> Continue
+  ^(\s+${IP_ROUTE} +S){4} -> Continue
+  ^(\s+${IP_ROUTE} +S){5} -> Continue
+  ^(\s+${IP_ROUTE} +S){6} -> Continue
+  ^(\s+${IP_ROUTE} +S){7} -> Continue
+  ^(\s+${IP_ROUTE} +S){8} -> Continue
+  ^(\s+${IP_ROUTE} +S){9} -> Continue
+  ^\s+Record route:\s${IP_ROUTE} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){2} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){3} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){4} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){5} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){6} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){7} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){8} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){9} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){10} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){11} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){12} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){13} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){14} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){15} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){16} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){17} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){18} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){19} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){20} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){21} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){22} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){23} -> Continue
+  ^\s+Record route:(\s${IP_ROUTE}){24} -> Continue
