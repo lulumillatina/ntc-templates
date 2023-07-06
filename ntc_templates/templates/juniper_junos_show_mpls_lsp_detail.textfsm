@@ -10,7 +10,7 @@ Value List IP_ROUTE (\d+\.\d+\.\d+\.\d+|NONE)
 
 Start
   ^\S+.* -> Continue.Record
-  ^${ORIGIN}\s+LSP:\s+\d+\ssessions 
+  ^${ORIGIN}\s+LSP:\s+\d+\ssessions
   ^${DST} 
   ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+,\s[\w-]+:\s${NAME}
   ^\s+[\w-]+:\s${SRC},\s[\w-]+:\s${STATE},\s[\w-]+:\s\S+ 
