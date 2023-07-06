@@ -7,6 +7,7 @@ Value ADMIN (\S+)
 Value INTFD (\S+)
 Value INTFU (\S+)
 Value HOP (\d+)
+Value List IP_ROUTE (\d+.\d+.\d+.\d+)
 
 Start
   ^\s+---\s+RSVP\s+ -> Continue.Record
@@ -16,4 +17,5 @@ Start
   ^Downstream\s+Intf\s+Name:\s+${INTFD}\s*$$
   ^Upstream\s+Intf\s+Name\s+:\s+${INTFU}
   ^Recorded\s+Route\s+\(hops:\s+${HOP}\)
+  ^\s+${IP_ROUTE}
 
